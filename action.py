@@ -30,12 +30,12 @@ class Action:
         elif(action == "xbox"):
             self.main.cleanUp()
             Debug.message("Stopping",self.debug)
-	elif(action == "left bumper"):
-	    self.robot.extend()
-	    Debug.message("extend",self.debug)
-	elif(action == "right bumper"):
-	    self.robot.retract()
-	    Debug.message("retract",self.debug)
-	elif(action == "right bumper released" or action == "left bumper released"):
-	    self.robot.liftStop()
-	    Debug.message("lift stop",self.debug)
+        elif(action == "left bumper"):
+            self.robot.extend()
+            Debug.message("extend",self.debug)
+        elif(action == "right bumper"):
+            self.robot.retract()
+            Debug.message("retract",self.debug)
+        elif(action == "right bumper released" or action == "left bumper released"):
+            self.robot.liftStop()
+            Debug.message("lift stop",self.debug)

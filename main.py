@@ -18,15 +18,15 @@ class Main:
         self.bot = ServoBot(self.debug)
         self.controller = GamePad(self.debug)
         self.action = Action(self.bot,self.debug, self)
-	mixer.init()
-	print "init"
-	mixer.music.load("/home/pi/Desktop/Robotics/match_start.mp3")
-	print "load"
-	mixer.music.play()
-	print "play"
-	sleep(2)
-	mixer.music.stop()
-	print "stop"
+        mixer.init()
+        print("init")
+        mixer.music.load("/home/pi/Desktop/Robotics/match_start.mp3")
+        print("load")
+        mixer.music.play()
+        print("play")
+        sleep(2)
+        mixer.music.stop()
+        print("stop")
         
         print("Let's GO!!")
 	
@@ -45,10 +45,10 @@ class Main:
     def cleanUp():
         #cleanup
         print("Need to clean up")
-	mixer.music.load("ENDMATCH.mp3")
-	mixer.music.play()
-	sleep(2.5)
-	mixer.music.stop()
+        mixer.music.load("ENDMATCH.mp3")
+        mixer.music.play()
+        sleep(2.5)
+        mixer.music.stop()
         myLED = StatusLED()
         myLED.cleanUp()
         exit()
